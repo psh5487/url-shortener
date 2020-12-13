@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.content {
+    margin-left: 100px;
+}
+
+#donutchart {
+    width: 900px; 
+    height: 500px;
+}
+
+#shortUrl span {
+    cursor: pointer;
+}

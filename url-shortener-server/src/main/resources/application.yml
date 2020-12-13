@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/url_shortening_db?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: root
+    password: smile
+  jpa:
+    show-sql: true
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  redis:
+    host: localhost
+    port: 6378
+    expireTime: 60
+  profiles:
+    active: local
+

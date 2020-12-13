@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/indexStyle.css">
+
+    <title>Url Shortener</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <h2>Url Shortener - 박소현(C)</h2>
+    </nav>
+    <br>
+
+    <div class="m-3">
+        <form id="longUrlForm" method="post" action="" accept-charset="utf-8">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="inputUrl" placeholder="Input Long Url">
+                </div>
+            </div>
+        </form>
+        <span id="submitButton" class="btn btn-info">줄이기</span>
+        <span id="copyButton" class="btn btn-warning">Copy</span> &nbsp;
+        <span id="shortUrl">
+            <!--a 테그가 들어가게 됨-->
+        </span>
+    </div>
+    <br>
+
+    <div class="m-3">
+        <form id="shortUrlForm" method="post" action="" accept-charset="utf-8">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="inputShortUrl" placeholder="Input Short Url">
+                </div>
+            </div>
+        </form>
+        <span id="gotoButton" class="btn btn-info">Go</span>
+    </div>
+    <br>
+
+    <div class="m-3">
+        <h2>Analysis</h2><br>
+
+        <!-- 총 개수 보이기 -->
+        <h4>1. Total Count</h4>
+        <div id="count"></div>
+        <br>
+
+        <!-- Top5 자주 클릭된 Url -->
+        <h4>2. Top5 자주 클릭된 Url</h4>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Shorted Url</th>
+                <th scope="col">Original Url</th>
+                <th scope="col">Click Count</th>
+            </tr>
+            </thead>
+            <tbody id="tableBody">
+            <!-- tr가 들어감 -->
+            </tbody>
+        </table>
+
+        <!-- 클릭 수 Pie 그래프 -->
+        <h4>3. 클릭 수 Pie Chart</h4>
+        <div id="donutchart"></div>
+    </div>
+
+
+    <!-- 템플릿 -->
+    <script id="countArea" type="count-template">
+        총 {count}개의 주소가 변환되었습니다.
+    </script>
+
+    <script id="tableArea" type="table-template">
+        <th scope="row">{idx}</th>
+        <td>{shortUrl}</td>
+        <td>{originalUrl}</td>
+        <td>{clickCount}</td>
+    </script>
+
+</body>
+    <script type="text/javascript" src="js/analysis.js"></script>
+    <script type="text/javascript" src="js/shorteningUrl.js"></script>
+    <script type="text/javascript" src="js/originalUrl.js"></script>
+
+    <!-- Google Chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+</html>
