@@ -1,5 +1,6 @@
 # url-shortener
-Smilegate DEV Camp - PJ1. Url Shortener
+Smilegate DEV Camp - PJ1. Url Shortener  
+박소현(C)
 
 ## 기능
 1. long Url -> short Url 변환
