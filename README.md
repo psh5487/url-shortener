@@ -1,6 +1,6 @@
 # url-shortener
 Smilegate DEV Camp - PJ1. Url Shortener  
-박소현(C)
+박소현(C) @JobJava
 
 ## 기능
 1. long Url -> short Url 변환
@@ -21,7 +21,7 @@ Smilegate DEV Camp - PJ1. Url Shortener
 - Spring Boot
 - MySQL
 - Redis
-- HTML/CSS
+- HTML/CSS/jQuery
 - Javascript
 
 ## API
