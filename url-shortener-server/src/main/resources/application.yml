@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/url_shortening_db?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
     username: root
-    password: smile
+    password: 5487
   jpa:
     show-sql: true
   jackson:
